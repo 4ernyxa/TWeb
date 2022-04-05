@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import {menu} from '/components/menu.tsx';
+import Menushka from './components/Menushka';
+import Cards from './components/Cards'
 
 import { Layout, Menu } from 'antd';
 
@@ -13,28 +14,24 @@ const { Header, Content, Footer } = Layout;
 function App() {
   return (
     <div className="App">
-      {/*<header className="App-header">*/}
-      {/*  <img src={logo} className="App-logo" alt="logo" />*/}
-      {/*  <p>*/}
-      {/*    Ursatii Vladimir Cr-193*/}
-      {/*  </p>*/}
-      {/*</header>*/}
-        <Layout className="layout">
+      <Layout className="layout">
         <Header>
             <div className="logo" />
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                {new Array(5).fill(null).map((_, index) => {
-                    const key = index + 1;
-                    return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
-                })}
+            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+                <Menu.Item key="1">Home</Menu.Item>
+                <Menu.Item key="2">Products</Menu.Item>
+                <Menu.Item key="3">Support</Menu.Item>
+                <Menu.Item key="4">Cart</Menu.Item>
             </Menu>
         </Header>
+
         <Content style={{ padding: '0 50px' }}>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-                Content
+                <Menushka/>
+                <Cards/>
             </div>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+        <Footer style={{ textAlign: 'center' }}>TW LABS ©2022 Created by Ursatii Vladimir CR-193</Footer>
       </Layout>
     </div>
   );
