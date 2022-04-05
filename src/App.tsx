@@ -2,9 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Layout, Menu, Breadcrumb } from 'antd';
+import {menu} from '/components/menu.tsx';
+
+import { Layout, Menu } from 'antd';
+
 
 const { Header, Content, Footer } = Layout;
+
 
 function App() {
   return (
@@ -26,13 +30,8 @@ function App() {
             </Menu>
         </Header>
         <Content style={{ padding: '0 50px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>List</Breadcrumb.Item>
-                <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="site-layout-content">
-                
+            <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+                Content
             </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
