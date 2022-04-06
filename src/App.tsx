@@ -4,6 +4,7 @@ import './App.css';
 
 import Menushka from './components/Menushka';
 import Cards from './components/Cards'
+import Forma from './components/form'
 
 import { Layout, Menu } from 'antd';
 
@@ -29,6 +30,7 @@ function App() {
             <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
                 <Menushka/>
                 <Cards/>
+                <Forma/>
             </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>TW LABS ©2022 Created by Ursatii Vladimir CR-193</Footer>
