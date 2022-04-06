@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from 'antd';
-
+import './style/card.css'
 const { Meta } = Card;
 
 const Cards: Function = (): JSX.Element[]  => {
@@ -11,7 +11,7 @@ const Cards: Function = (): JSX.Element[]  => {
 
     const renderCard = (card:any, index:any) => {
         return(
-            <Card hoverable style={{ width: 240 }} key={index}
+            <Card className="card" hoverable style={{ width: 240 }} key={index}
                 cover={<img alt={card.alt} src={card.src} />}>
                 <Meta title={card.title} description={card.description} />
             </Card>
