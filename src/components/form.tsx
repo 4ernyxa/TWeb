@@ -24,7 +24,7 @@ const Forma = () => {
     };
 
     return (
-        <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+        <Form style={{width:400}} {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
             <Form.Item name={['user', 'name']} label="Name" rules={[{ required: true }]}>
                 <Input />
             </Form.Item>
