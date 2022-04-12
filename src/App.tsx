@@ -5,6 +5,7 @@ import {useState} from "react";
 
 import Menushka from './components/Menushka';
 import Cards from './components/Cards'
+import Forma from './components/form'
 
 import { Layout, Menu } from 'antd';
 
@@ -30,6 +31,7 @@ function App() {
             <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
                 <Menushka/>
                 <Cards/>
+                <Forma/>
             </div>
         </Content>
           <FormFiveField></FormFiveField>
