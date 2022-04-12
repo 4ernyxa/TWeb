@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
 
 import Menushka from './components/Menushka';
 import Cards from './components/Cards'
@@ -31,6 +32,8 @@ function App() {
                 <Cards/>
             </div>
         </Content>
+          <FormFiveField></FormFiveField>
+          <FormSevenField></FormSevenField>
         <Footer style={{ textAlign: 'center' }}>TW LABS ©2022 Created by Ursatii Vladimir CR-193</Footer>
       </Layout>
     </div>
@@ -38,3 +41,36 @@ function App() {
 }
 
 export default App;
+
+function FullWidthTextField() {
+    const [input, setInput] = useState('');
+    return (
+        <div style={{width: 500, maxWidth: '100%'}}>
+            <input value={input} onInput={e => setInput((e.target as HTMLTextAreaElement).value)}/>
+        </div>
+    );
+}
+
+function FormFiveField() {
+    return (
+        <form>
+            <FullWidthTextField></FullWidthTextField>
+            <FullWidthTextField></FullWidthTextField>
+            <FullWidthTextField></FullWidthTextField>
+            <FullWidthTextField></FullWidthTextField>
+            <FullWidthTextField></FullWidthTextField>
+            <h1>End first 5 fields</h1>
+        </form>
+    );
+}
+
+function FormSevenField() {
+    return (
+        <form>
+            <FormFiveField></FormFiveField>
+            <FullWidthTextField></FullWidthTextField>
+            <FullWidthTextField></FullWidthTextField>
+            <h1>End first 7 fields</h1>
+        </form>
+    );
+}
