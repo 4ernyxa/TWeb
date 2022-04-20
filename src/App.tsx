@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Interface} from "readline";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ export default App;
 
 function InputField() {
     const [input, setInput] = useState('');
-    console.log(input);
+    console.log(InterfaceFive.label + input);
+
     return (
 
         <div style={{
@@ -35,26 +37,13 @@ function InputField() {
     );
 }
 
-function InterfaceFive() {
-    return (
-        <div>
-            <InputField></InputField>
-            <InputField></InputField>
-            <InputField></InputField>
-            <InputField></InputField>
-            <InputField></InputField>
-            <h1>End interface5 fields</h1>
-        </div>
-    );
+export interface InterfaceUser{
+    name: string;
+    age: number;
 }
+const Vladimir: User = {
+    name: 'Vladimir'
+}
+function InterfaceInputNumber() extends InterfaceInput{
 
-function InterfaceSeven() {
-    return (
-        <div>
-            <InterfaceFive></InterfaceFive>
-            <InputField></InputField>
-            <InputField></InputField>
-            <h1>End interface7 fields</h1>
-        </div>
-    );
 }
