@@ -11,6 +11,9 @@ const Todo = ({ text, id }) => {
     return (
         <div onClick={handleCloseTodo} className="todo-container">
             <span>{text}</span>
+
+            <span>{text}    </span>
+
             <span>x</span>
         </div>
     )
