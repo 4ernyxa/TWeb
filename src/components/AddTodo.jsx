@@ -7,9 +7,8 @@ const AddTodo = () => {
 
     const handleAddTodo = () => {
         todosStore.addTodo(todoBody);
-        setTodoBody('');
+        setTodoBody(' ');
     };
-
     return (
         <>
             <input value={todoBody} onChange={(e) => setTodoBody(e.target.value)} type="text" placeholder="todo" />
