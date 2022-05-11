@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {useState} from "react";
@@ -36,7 +36,7 @@ function App() {
         </Content>
           <FormFiveField></FormFiveField>
           <FormSevenField></FormSevenField>
-        <Footer style={{ textAlign: 'center' }}>TW LABS ©2022 Created by Ursatii Vladimir CR-193</Footer>
+        <Footer style={{ textAlign: 'center' }}>||Cernei CR-193</Footer>
       </Layout>
     </div>
   );
@@ -56,12 +56,7 @@ function FullWidthTextField() {
 function FormFiveField() {
     return (
         <form>
-            <FullWidthTextField></FullWidthTextField>
-            <FullWidthTextField></FullWidthTextField>
-            <FullWidthTextField></FullWidthTextField>
-            <FullWidthTextField></FullWidthTextField>
-            <FullWidthTextField></FullWidthTextField>
-            <h1>End first 5 fields</h1>
+
         </form>
     );
 }
@@ -69,10 +64,7 @@ function FormFiveField() {
 function FormSevenField() {
     return (
         <form>
-            <FormFiveField></FormFiveField>
-            <FullWidthTextField></FullWidthTextField>
-            <FullWidthTextField></FullWidthTextField>
-            <h1>End first 7 fields</h1>
+            
         </form>
     );
 }
