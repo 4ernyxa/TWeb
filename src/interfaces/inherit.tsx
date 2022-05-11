@@ -12,15 +12,15 @@ const columns = [
         dataIndex: 'secondname',
     },
     {
-        title: 'Info',
+        title: 'Status',
         dataIndex: 'info',
     },
     {
-        title: 'Favorite Distribution',
+        title: 'Departament',
         dataIndex: 'favDist',
     },
     {
-        title: 'Username',
+        title: 'Code',
         dataIndex: 'username',
     },
     {
@@ -28,7 +28,7 @@ const columns = [
         dataIndex: 'key',
     },
     {
-        title: 'Watched Mr.Robot',
+        title: 'Allied',
         dataIndex: 'w_mrrobot',
     },
 ];
@@ -37,21 +37,21 @@ const columns = [
 const data: InheritFile[] =[
     {
         id: '1',
-        firstname: 'John',
-        secondname: 'Doe',
-        info: 'I am the white hat',
-        favDist: 'Debian',
-        username: 'Cocktail',
+        firstname: 'Wrath',
+        secondname: 'Rene',
+        info: 'Demensional Pilon ',
+        favDist: 'Apex',
+        username: 'WRX',
         key: 4357,
         w_mrrobot: 'Yes'
     },
     {
         id: '2',
-        firstname: 'Constantin',
-        secondname: 'Libetsky',
-        info: 'BlackHat',
-        favDist: 'ArchLinux',
-        username: 'NewWorldOrder',
+        firstname: 'Bangalor',
+        secondname: 'Olivia',
+        info: 'Army Soldier',
+        favDist: 'IMC',
+        username: 'BANX',
         key: 21467867,
         w_mrrobot: 'No'
     },
