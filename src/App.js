@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-          <h1 onClick={registration(admin)}> Ursatii Vladimir CR-193 </h1>
+          <h1 onClick={registration(admin)}> Cernei Iurie Cr-193 </h1>
           <input type="text" onChange={(e) => localStorage.setItem("registerUser", e.target.value)}></input>
           <input type="password" onChange={(e) => localStorage.setItem("registerPass", e.target.value)}></input>
           <button onClick={checkIfExist}>Enter</button>
@@ -18,7 +18,7 @@ function App() {
 export default App;
 
 const admin = {
-    login: "vova",
+    login: "admin",
     pass: "123"
 }
 const users = [{}]
